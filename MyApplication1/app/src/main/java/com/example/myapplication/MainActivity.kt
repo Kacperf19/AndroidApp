@@ -13,34 +13,46 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Get the username from the intent extras
+
         val username = intent.getStringExtra("USERNAME")
 
-        // Find TextView by ID and set the username
+
         val welcomeTextView = findViewById<TextView>(R.id.welcomeTextView)
         welcomeTextView.text = getString(R.string.welcome, username)
 
         val openNewActivityButton = findViewById<Button>(R.id.button)
 
-        // Set an onClickListener for the button
+
         openNewActivityButton.setOnClickListener {
-            // Create an Intent to start the new activity
+
             val intent = Intent(this, CounterActivity::class.java)
             startActivity(intent)
-
+        }
             val openImageActivityButton = findViewById<Button>(R.id.button2)
+
             openImageActivityButton.setOnClickListener {
-                // Create an Intent to start ImageActivity
+
                 val intent = Intent(this, ImageActivity::class.java)
                 startActivity(intent)
-
+            }
                 val openSearchActivityButton = findViewById<Button>(R.id.button3)
+
                 openSearchActivityButton.setOnClickListener {
-                    // Create an Intent to start ImageActivity
+
                     val intent = Intent(this, SearchActivity::class.java)
                     startActivity(intent)
 
 
 
     }
-}}}}
+        val openListActivityButton = findViewById<Button>(R.id.button4)
+
+        openListActivityButton.setOnClickListener {
+
+            val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+
+
+
+        }
+}}

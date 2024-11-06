@@ -23,5 +23,9 @@
     <string name="buttonWeb">Interet</string>
     <string name="buttonLocation">Mapa</string>
     <string name="buttonPhone">Zadzwoń</string>
+    <string name="opis">Licznik używa się do zliczania </string>
+    <string name="photo">Ta aplikacja edytuje zdjecia </string>
+    <string name="opis1">W tej aplikacji zadasz pytania</string>
+    <string name="list">Lista</string>
 
 </resources>
