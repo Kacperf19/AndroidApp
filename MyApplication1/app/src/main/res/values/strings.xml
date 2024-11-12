@@ -27,5 +27,7 @@
     <string name="photo">Ta aplikacja edytuje zdjecia </string>
     <string name="opis1">W tej aplikacji zadasz pytania</string>
     <string name="list">Lista</string>
+    <string name="lista" >Lista kontaktów</string>
+    <string name="opis5" >Użytkownik może dodawać nowe kontakty, edytować istniejące oraz usuwać te, które są już niepotrzebne.</string>
 
 </resources>
