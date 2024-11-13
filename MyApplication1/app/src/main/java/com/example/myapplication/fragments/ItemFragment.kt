@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.myapplication.R
+import com.example.myapplication.data.Contact
 import com.example.myapplication.fragments.placeholder.PlaceholderContent
 
 /**
@@ -17,6 +18,7 @@ import com.example.myapplication.fragments.placeholder.PlaceholderContent
 class ItemFragment : Fragment() {
 
     private var columnCount = 1
+    private var ContactList = listOf<Contact>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,10 +41,42 @@ class ItemFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyItemRecyclerViewAdapter(PlaceholderContent.ITEMS)
+                ContactList = createContactList()
+                adapter = MyItemRecyclerViewAdapter(ContactList)
             }
         }
         return view
+    }
+
+    private val myImage = listOf(
+        R.drawable.ob1,
+        R.drawable.ob4,
+        R.drawable.ob4
+    )
+    private fun createContactList(): List<Contact> = buildList<Contact> {
+        for (i in 1 ..10){
+        val name ="Użytkownik${i}"
+        val number = "+"+ "${randomNumber(2)} " + "${randomNumber(3)} " +"${randomNumber(3)} " + "${randomNumber(3)} "
+        val image = myImage[(myImage.indices.random())]
+        val contact = Contact(name,number,image)
+        add(contact)
+        }
+
+    }
+    private fun  addContact(contact:Contact){
+        var mutableContactList = ContactList.toMutableList()
+        mutableContactList.add(contact)
+        ContactList = mutableContactList
+    }
+    private fun randomNumber(n: Int):String
+
+    {
+        var number = ""
+        for (i in (1 .. n)){
+            number += "${(0 .. 3).random()}"
+
+        }
+        return number
     }
 
     companion object {

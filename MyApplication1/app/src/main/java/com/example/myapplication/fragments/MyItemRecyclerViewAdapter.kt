@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.myapplication.R
+import com.example.myapplication.data.Contact
 
 import com.example.myapplication.fragments.placeholder.PlaceholderContent.PlaceholderItem
 import com.example.myapplication.databinding.FragmentItemBinding
@@ -15,8 +16,9 @@ import com.example.myapplication.databinding.FragmentItemBinding
  * [RecyclerView.Adapter] that can display a [PlaceholderItem].
  * TODO: Replace the implementation with code for your data type.
  */
+
 class MyItemRecyclerViewAdapter(
-    private val values: List<PlaceholderItem>
+    private val values: List<Contact>
 ) : RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -33,8 +35,9 @@ class MyItemRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = values[position]
-        holder.ContactName.text = item.id
-        holder.ContactNumer.text = item.content
+        holder.ContactName.text = item.name
+        holder.ContactNumer.text = item.numer
+        holder.ContacImage.setImageResource(item.image)
     }
 
     override fun getItemCount(): Int = values.size
@@ -42,10 +45,11 @@ class MyItemRecyclerViewAdapter(
     inner class ViewHolder(binding: FragmentItemBinding) : RecyclerView.ViewHolder(binding.root) {
         val ContactName: TextView = binding.ContactName
         val ContactNumer: TextView = binding.ContactNumer
-        val ContacImage:ImageView = binding.ContactImage
+        val ContacImage: ImageView = binding.ContactImage
 
 
 
     }
+
 
 }
