@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bacground">
+
+    <ImageView
+        android:id="@+id/ImageFish"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="456dp" />
+
+    <Button
+        android:id="@+id/randomImageBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:backgroundTint="#000000"
+        android:text="@string/GetRandom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Switch
+        android:id="@+id/MonoBTN"
+        android:layout_width="166dp"
+        android:layout_height="38dp"
+        android:text="@string/switchImnage"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#040303"
+        android:textColorHint="#0D0C0C"
+        android:textColorLink="#121111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toEndOf="@+id/randomImageBTN"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <SeekBar
+        android:id="@+id/BarGrey"
+        android:layout_width="331dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="64dp"
+        android:max="666"
+        android:progress="200"
+        android:progressTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MonoBTN" />
+
+    <SeekBar
+        android:id="@+id/BarAlfa"
+        android:layout_width="331dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="76dp"
+        android:max="255"
+        android:progress="255"
+        android:progressTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarGrey" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="182dp"
+        android:layout_height="27dp"
+        android:text="@string/nsi"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/BarGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MonoBTN"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="286dp"
+        android:layout_height="37dp"
+        android:text="@string/cpa"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/BarAlfa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BarGrey"
+        app:layout_constraintVertical_bias="0.512" />
+</androidx.constraintlayout.widget.ConstraintLayout>

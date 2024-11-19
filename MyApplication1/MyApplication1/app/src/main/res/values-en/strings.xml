@@ -1,0 +1,38 @@
+<!-- res/values/strings.xml -->
+<resources >
+<string name="app_name">My App</string>
+    <string name="Counter">Counter</string>
+    <string name="login_hint">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="welcome">Welcome, %1$s!</string>
+    <string name="inputEditText">Choose number</string>
+    <string name="setButton">Set</string>
+    <string name="resetButton">Reset</string>
+    <string name="GetRandom">Random</string>
+    <string name="switchImnage">Color</string>
+    <string name="nsi">Size</string>
+    <string name="cpa">Alfa</string>
+    <string name="switchchangecolor">Grey</string>
+    <string name="image">Image</string>
+    <string name="phonewalid">Number</string>
+    <string name="searchID">Search</string>
+    <string name="url">Link</string>
+    <string name="locations">Localiztion</string>
+
+    <string name="google">Search</string>
+    <string name="buttonSrch">Search</string>
+    <string name="buttonWeb">Web</string>
+    <string name="buttonLocation">Map</string>
+    <string name="buttonPhone">Phone</string>
+    <string name="opis">Counter use to count </string>
+    <string name="photo">This app edit to photo </string>
+
+    <string name="opis1">In this app you ask question</string>
+    <string name="list">List</string>
+    <string name="lista" >Contact List</string>
+    <string name="opis5" >The user can add new contacts, edit existing ones, and delete those that are no longer needed</string>
+    <string name="add">Add</string>
+    <string name="number1">Number</string>
+    <string name="namecontact">Name</string>
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Moja Aplikacja</string>
+    <string name="Counter">Licznik</string>
+    <string name="login_hint">Login</string>
+    <string name="password_hint">Hasło</string>
+    <string name="login_button_text">Zaloguj się</string>
+    <string name="welcome">Witaj, %1$s!</string>
+    <string name="inputEditText">Wybierz liczbe</string>
+    <string name="setButton">Ustaw</string>
+    <string name="resetButton">Resetuj</string>
+    <string name="GetRandom">Randomowo</string>
+    <string name="switchImnage">Kolorowy</string>
+    <string name="nsi">Powieksz</string>
+    <string name="cpa">Alfa</string>
+    <string name="switchchangecolor">Szary</string>
+    <string name="image">Zdjecia</string>
+    <string name="google">Wyszukiwanie</string>
+    <string name="phonewalid">Numer</string>
+    <string name="searchID">Wyszukaj</string>
+    <string name="url">Link</string>
+    <string name="locations">Lokalizacja</string>
+    <string name="buttonSrch">Szukaj</string>
+    <string name="buttonWeb">Interet</string>
+    <string name="buttonLocation">Mapa</string>
+    <string name="buttonPhone">Zadzwoń</string>
+    <string name="opis">Licznik używa się do zliczania </string>
+    <string name="photo">Ta aplikacja edytuje zdjecia </string>
+    <string name="opis1">W tej aplikacji zadasz pytania</string>
+    <string name="list">Lista</string>
+    <string name="lista" >Lista kontaktów</string>
+    <string name="opis5" >Użytkownik może dodawać nowe kontakty, edytować istniejące oraz usuwać te, które są już niepotrzebne.</string>
+    <string name="add">Dodaj</string>
+    <string name="number1">Numer</string>
+    <string name="namecontact">Nazwa</string>
+
+</resources>
