@@ -29,5 +29,10 @@
     <string name="list">Lista</string>
     <string name="lista" >Lista kontaktów</string>
     <string name="opis5" >Użytkownik może dodawać nowe kontakty, edytować istniejące oraz usuwać te, które są już niepotrzebne.</string>
+    <string name="listBTN1" />
+    <string name="listBTN2" />
+    <string name="listBTN3" />
+    <string name="GoMapBTn" >Znajdz</string>
+    <string name="searchMapBTN" >Szukaj</string>
 
 </resources>

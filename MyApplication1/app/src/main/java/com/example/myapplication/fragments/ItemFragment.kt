@@ -10,7 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.myapplication.R
 import com.example.myapplication.data.Contact
-import com.example.myapplication.fragments.placeholder.PlaceholderContent
 
 /**
  * A fragment representing a list of Items.

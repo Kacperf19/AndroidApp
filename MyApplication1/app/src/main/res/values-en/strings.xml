@@ -32,4 +32,6 @@
     <string name="list">List</string>
     <string name="lista" >Contact List</string>
     <string name="opis5" >The user can add new contacts, edit existing ones, and delete those that are no longer needed</string>
+    <string name="GoMapBTn">Find</string>
+    <string name="searchMapBTN">Search</string>
 </resources>
